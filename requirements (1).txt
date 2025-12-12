@@ -1,0 +1,15 @@
+# Core Data & Utility
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Statistical/Traditional Models
+statsmodels
+
+# Decomposition Model (Prophet)
+prophet # Requires the fbprophet library
+
+# Deep Learning Models
+tensorflow
