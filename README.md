@@ -1,11 +1,28 @@
 # Sales Quantity Forecasting: Comparative Analysis (LSTM vs. Transformer vs. SARIMA)
 
+## Research Motivation
+
+The project began with the goal of improving sales forecasting using historical trends. While statistical models showed good performance, they struggled during sudden demand spikes caused by holidays and special events.
+
+This led me to explore deep learning models such as LSTM and Transformers to better capture complex temporal patterns. The study ultimately focuses on building a forecasting system that is accurate, robust, and able to generalize to future demand variations.
+
 ## Project Overview
 
-This project implements and evaluates four distinct time series forecasting models—including advanced Deep Learning architectures—to predict daily sales quantity. The core objective was to **determine the most robust and accurate forecasting model** for optimizing inventory levels and strategic business planning.
+This project aims to forecast daily sales quantity using time series forecasting techniques. Traditional statistical models were first applied and showed good performance under normal conditions but struggled during sudden demand spikes such as holidays. To better capture complex patterns, deep learning models including Stacked LSTM and Transformer were implemented and compared. Among all models evaluated, the Stacked LSTM achieved the best predictive performance, demonstrating its effectiveness in modeling long-term dependencies and demand variability.
 
 **Winner:** The **Stacked LSTM (Long Short-Term Memory) model** achieved the lowest prediction error, proving to be the most effective solution for this specific sales data.
 
+## Research Objective
+
+Real-world sales demand data often exhibit non-stationary behavior due to seasonality, external events, and sudden demand spikes during holidays and special occasions. These variations can violate the assumptions of traditional forecasting methods and lead to unstable predictive performance.
+
+This project investigates how reliably time-series forecasting models perform under such changing conditions. Rather than focusing only on minimizing prediction error, the study explores the following question:
+
+How reliably can forecasting models predict future demand when the data distribution shifts due to temporal changes and sudden demand spikes?
+
+To address this, the project evaluates classical statistical models (ARIMA, SARIMA, Prophet) alongside deep learning approaches (Stacked LSTM and Transformer Encoder). The comparison considers predictive accuracy, model stability, and adaptability to demand fluctuations.
+
+The broader goal is to move beyond accuracy alone and understand the robustness, generalization ability, and limitations of forecasting models in real-world environments.
 ## Methodology and Models
 
 The analysis rigorously compared four models on an unseen test set:
